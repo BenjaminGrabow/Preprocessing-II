@@ -252,3 +252,17 @@ header a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #27ffdb;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
