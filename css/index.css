@@ -187,7 +187,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0;
-    min-width: 280px;
+    min-width: 310px;
   }
 }
 header a {
@@ -199,7 +199,7 @@ header a {
 }
 @media (max-width: 500px) {
   header a {
-    padding: 0 2rem;
+    padding: 0 0.6rem;
     margin: 0;
     font-size: 2rem;
     font-weight: 100;
