@@ -3,34 +3,30 @@ header {
     .flex-direction-wrap-justify-align(row, nowrap, space-between, baseline);
     max-width: 800px;
     min-width: 570px;
-    width : 100%;
-    margin: 1rem auto;
+    width    : 100%;
+    margin   : 1rem auto;
 
     @media @mobile {
-        display       : flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin        : 0;
+        .flex-direction-wrap-justify-align(column, nowrap, center, center);
+        margin   : 0;
         min-width: 280px;
     }
 
-        a {
-            text-decoration: none;
-            color          : black;
-            font-size      : 1.5rem;
-            padding        : 0 2.5rem;
-            font-weight    : bold;
+    a {
+        text-decoration: none;
+        color          : black;
+        font-size      : 1.5rem;
+        padding        : 0 2.5rem;
+        font-weight    : bold;
 
-            @media @mobile {
-                padding    : 0 2rem;
-                margin     : 0;
-                font-size  : 2rem;
-                font-weight: 100;
-            }
+        @media @mobile {
+            padding    : 0 2rem;
+            margin     : 0;
+            font-size  : 2rem;
+            font-weight: 100;
         }
+    }
 }
-
 
 .top-border {
     width        : 100%;
@@ -45,9 +41,8 @@ header {
     border-bottom: 2px dashed #C0C0C0;
 
     @media @mobile {
-        display       : flex;
-        flex-direction: column;
-        text-align    : left;
-        width: 90%;
+        .flex-direction-wrap-justify-align(column, nowrap, flex-start, stretch);
+        text-align: left;
+        width     : 90%;
     }
 }

@@ -183,6 +183,7 @@ header {
   header {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -219,6 +220,9 @@ header a {
   .top-container2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     text-align: left;
     width: 90%;
   }
@@ -251,6 +255,9 @@ header a {
   .home .content-section {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -292,6 +299,9 @@ header a {
   .home .inverse-content {
     display: flex;
     flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: start;
   }
 }
 .home .inverse-content .text-content {
@@ -321,12 +331,18 @@ header a {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: stretch;
 }
 @media (max-width: 500px) {
   .home .content-pick {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     margin: 0 auto;
     width: 80%;
   }
@@ -341,18 +357,18 @@ header a {
   }
 }
 .home .content-pick .btn {
+  color: white;
+  background-color: #008080;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #008080;
   cursor: pointer;
-  width: 200px;
-  height: 45px;
-  font-size: 2rem;
-  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {

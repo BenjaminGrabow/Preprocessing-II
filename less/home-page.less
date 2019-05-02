@@ -2,7 +2,6 @@
 
   @media @mobile {
     width: 90%;
-    
   }
 
   .content-section {
@@ -10,11 +9,10 @@
     .flex-direction-wrap-justify-align(row, wrap, space-between, stretch);
 
     @media @mobile {
-      display       : flex;
-      flex-direction: column;
-      width         : 100%;
-      padding       : 0;
-      margin        : 0;
+      .flex-direction-wrap-justify-align(column, nowrap, flex-start, stretch);
+      width  : 100%;
+      padding: 0;
+      margin : 0;
     }
 
     .text-content {
@@ -51,8 +49,7 @@
     border-bottom : 2px dashed @navigation-border;
 
     @media @mobile {
-      display       : flex;
-      flex-direction: column-reverse;
+      .flex-direction-wrap-justify-align(column-reverse, nowrap, flex-start, start);
     }
 
     .text-content {
@@ -83,16 +80,14 @@
   }
 
   .content-pick {
-    padding-top    : 30px;
-    border-top     : 2px dashed @navigation-border;
-    display        : flex;
-    justify-content: space-between;
+    padding-top: 30px;
+    border-top : 2px dashed @navigation-border;
+    .flex-direction-wrap-justify-align(row, nowrap, space-between, stretch);
 
     @media @mobile {
-      display       : flex;
-      flex-direction: column;
-      margin        : 0 auto;
-      width         : 80%;
+      .flex-direction-wrap-justify-align(column, nowrap, flex-start, stretch);
+      margin: 0 auto;
+      width : 80%;
     }
 
     .destination {
@@ -105,14 +100,9 @@
     }
 
     .btn {
+      .button();
       .flex-direction-wrap-justify-align(row, nowrap, center, center);
-      color           : white;
-      background-color: #008080;
       cursor          : pointer;
-      width           : 200px;
-      height          : 45px;
-      font-size       : 2rem;
-      border-radius   : 10px;
 
       @media(max-width: 500px) {
         width: 100%;
