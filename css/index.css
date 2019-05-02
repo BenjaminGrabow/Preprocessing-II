@@ -376,6 +376,10 @@ header a {
   align-items: center;
   cursor: pointer;
 }
+.home .content-pick .btn:hover {
+  background-color: #3333ff;
+  transition: 0.5 ease-in-out;
+}
 @media (max-width: 500px) {
   .home .content-pick .btn {
     width: 100%;

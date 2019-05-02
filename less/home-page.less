@@ -104,6 +104,11 @@
       .button();
       .flex-direction-wrap-justify-align(row, nowrap, center, center);
       cursor          : pointer;
+      
+      &:hover {
+        background-color: lighten(blue, 10%);
+        transition: 0.5 ease-in-out;
+    }
 
       @media(max-width: 500px) {
         width: 100%;
