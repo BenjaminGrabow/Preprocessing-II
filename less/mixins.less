@@ -16,3 +16,7 @@
       border-radius   : @radius;
 }
 
+.animation(@color: blue, @percent: 10%, @delay: 0.5) {
+    background-color: lighten(@color, @percent);
+    transition: @delay ease-in-out;
+}
