@@ -1,61 +1,119 @@
 .home {
 
+  @media @mobile {
+    width: 90%;
+  }
+
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .flex-direction-wrap-justify-align(row, wrap, space-between, stretch);
 
-   
-    
+    @media @mobile {
+      .flex-direction-wrap-justify-align(column, nowrap, flex-start, stretch);
+      width  : 100%;
+      padding: 0;
+      margin : 1rem 0;
+    }
+
     .text-content {
-      width: 48%;
+      width        : 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width  : 100%;
+        padding: 0;
+        margin-top: 1rem;
+      }
     }
 
     .img-content {
-      width: 48%;
+      width       : 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width  : 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom : 2px dashed @navigation-border;
+
+    @media @mobile {
+      .flex-direction-wrap-justify-align(column-reverse, nowrap, flex-start, start);
+    }
 
     .text-content {
-      padding-left: 1%;
+      padding-left : 1%;
       padding-right: 0;
     }
 
     .img-content {
       padding-right: 1%;
-      padding-left: 0;
+      padding-left : 0;
     }
   }
 
   .content-destination {
-    width: 75%;
+    width : 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      text-align: left;
+      width     : 100%;
+      margin    : 0 0 0 0;
+    }
 
     img {
       border-radius: 10px;
+      width        : 100%;
     }
   }
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top : 2px dashed @navigation-border;
+    .flex-direction-wrap-justify-align(row, nowrap, space-between, stretch);
+
+    @media @mobile {
+      .flex-direction-wrap-justify-align(column, nowrap, flex-start, stretch);
+      margin: 0 auto;
+      width : 80%;
+    }
 
     .destination {
-      width: 30%;
+      width        : 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      .button();
+      .flex-direction-wrap-justify-align(row, nowrap, center, center);
+      cursor          : pointer;
+      
+      &:hover {
+        .animation();
+    }
+
+      @media(max-width: 500px) {
+        width: 100%;
+      }
     }
   }
-}// home
+}
+
+// home
